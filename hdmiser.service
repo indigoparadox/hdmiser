@@ -1,0 +1,14 @@
+[Unit]
+Description=HDMI Matrix Serial-MQTT Bridge
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 /home/pi/Projects/hdmi/hdmi.py -c /home/pi/Projects/hdmi/hdmi.ini -m -b
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
+
+
