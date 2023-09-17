@@ -1,0 +1,17 @@
+[global]
+serial_port=/dev/serial/by-id/usb-Prolific_Technology_Inc._USB-Serial_Controller_D-if00-port0
+
+[profiles]
+sleep=4:7,1:1
+wake=7:7,7:1
+
+[mqtt]
+username=
+password=
+host=
+port=8883
+ssl=true
+ca=
+uid=
+topic=hdmi
+
